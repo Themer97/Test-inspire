@@ -1,0 +1,109 @@
+.fifth {
+  background: rgba(108, 184, 222, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  height: 15%;
+}
+
+.fifth-top {
+  width: 82%;
+}
+
+.fifth-top h1 {
+  margin-top: 1%;
+}
+
+.imgcard-conatiner {
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.imgcard-conatiner img {
+  width: 65%;
+  height: 597px;
+}
+
+.luminaire-card {
+  border-radius: 0% !important;
+  right: 20%;
+}
+
+.luminaire-card h2 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #334691;
+  margin-top: unset;
+}
+
+.luminaire-description {
+  color: #00245a;
+}
+@media (max-width: 1024px) {
+  .fifth-top h4 {
+    font-size: 14px;
+  }
+  .fifth-top h1 {
+    font-size: 35px;
+  }
+  .imgcard-conatiner {
+    padding-left: 0;
+    width: 90%;
+  }
+  .luminaire-card h2 {
+    font-size: 25px;
+  }
+  .fifth-top {
+    position: absolute;
+    top: 4445px;
+  }
+  .imgcard-conatiner img {
+    position: absolute;
+  }
+  .luminaire-card {
+    position: absolute;
+    right: 5%;
+    width: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  .imgcard-conatiner img {
+    width: 75%;
+  }
+}
+@media (max-width: 720px) {
+  .fifth {
+    justify-content: space-around;
+  }
+  .fifth-top {
+    position: unset;
+  }
+  .imgcard-conatiner {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+  .imgcard-conatiner img {
+    height: 60%;
+    width: 100%;
+    position: unset;
+  }
+  .luminaire-card {
+    position: unset;
+    height: 30%;
+    width: 50%;
+  }
+  .luminaire-card h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .luminaire-description {
+    text-align: center;
+  }
+}

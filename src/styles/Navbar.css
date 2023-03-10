@@ -1,0 +1,58 @@
+.Navbar-nav {
+  padding-top: 3%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 2%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #ffffff;
+  border-bottom: #ffffff 1px solid;
+}
+
+nav span:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.links.active {
+  border-bottom: #ffffff;
+}
+
+.navbar-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 5%;
+  font-size: 20px;
+}

@@ -1,0 +1,158 @@
+.bottom {
+  background-image: linear-gradient(
+      180deg,
+      #007bc0 0%,
+      rgba(51, 70, 145, 0.8) 100%
+    ),
+    url("../assets/Groupe41.png");
+  mix-blend-mode: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.bottom-container {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  border-bottom: #ffffff 1px solid;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-left {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.bottom-center {
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.bottom-icon {
+  font-size: 25px;
+}
+
+.coordonnées {
+  display: flex;
+  width: 80%;
+  gap: 8%;
+  align-items: center;
+}
+
+.bottom-right {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1%;
+}
+
+.bottom-center h3,
+.bottom-right h3 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #feffff;
+}
+
+.bottom-left h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.bottom-right h2 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #feffff;
+  margin-bottom: 5%;
+}
+
+.footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .bottom-container {
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80%;
+    margin-top: 12%;
+  }
+  .bottom-left,
+  .bottom-center,
+  .bottom-right {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-left span > img {
+    width: 80%;
+    height: 80%;
+  }
+  .bottom-left h3 {
+    font-size: 13px;
+  }
+  .objectif-btn {
+    width: 90%;
+  }
+  .bottom-center h3,
+  .bottom-right h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .coordonnées {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  input {
+    height: 10%;
+    font-size: 9px;
+  }
+  .bottom-right h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  .footer-right {
+    width: 50%;
+  }
+}
