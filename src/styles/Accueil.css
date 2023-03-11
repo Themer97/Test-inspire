@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.navbar button {
+  display: none;
+}
+
 .top-title {
   width: 1003px;
   height: 222px;
@@ -74,7 +78,7 @@
   width: 65%;
 }
 
-.services-card.middle {
+.servses-card.middle {
   border-left: #e5e5e5 1px solid;
   border-right: #e5e5e5 1px solid;
 }
@@ -137,31 +141,121 @@
   }
 }
 
-@media (max-width: 650px) {
-  .Navbar-nav {
-    padding-top: 0;
+@media (max-width: 767px) {
+  .navbar {
+    height: 10%;
+  }
+  .navbar button {
+    position: absolute;
+    width: fit-content;
+    right: 5%;
+    top: 5%;
+    font-size: 28px;
+    display: block;
+    background: transparent;
+    z-index: 11;
+  }
+  .navbar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 50%;
+  }
+  .sidebar {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(#007bc0, rgba(51, 70, 145, 0.9));
+    width: 260px;
+    overflow: hidden;
+  }
+  .Navbar-nav {
+    display: none;
+  }
+
+  .top-title {
+    font-size: 40px;
+    margin-top: 0;
   }
   nav {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6%;
+    height: 90%;
+  }
+  ul {
+    padding-top: 5%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    height: 50%;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 70%;
-    align-items: center;
-    justify-content: space-evenly;
+    gap: 6%;
+    height: 90%;
     margin: 0;
-    padding: 0;
   }
+  nav ul li {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (max-width: 586px) {
+  .top-title {
+    font-size: 30px;
+    justify-content: flex-end;
+  }
+  .services h4 {
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .cards-description {
+    font-size: 11px;
+  }
+}
+@media (max-width: 455px) {
   .top-title {
     font-size: 25px;
+    font-weight: 800;
+  }
+  .top-title h5 {
+    height: 16%;
+  }
+  .test {
+    position: absolute;
+    border-radius: 15px;
+    top: 660px;
+    width: 80%;
+  }
+  .services-img img {
+    width: 80%;
+    height: 90%;
+  }
+  .services-card .edge img {
+    width: 80%;
+    height: 90%;
+  }
+  .services h4 {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .cards-description {
+    font-size: 11px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services-card {
+    flex-direction: row;
+    width: 96%;
   }
 }

@@ -3,9 +3,9 @@ import { NavbarData } from "./NavbarData";
 import { GlobalOutlined, SearchOutlined } from "@ant-design/icons";
 import "../styles/Navbar.css";
 
-function Navbar() {
+function Navbar({ show }) {
   return (
-    <div className="Navbar-nav">
+    <div className={show ? "Navbar-nav" : "sidebar"}>
       <nav>
         <ul>
           {NavbarData.map((item, index) => {

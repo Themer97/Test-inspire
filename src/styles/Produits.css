@@ -67,3 +67,27 @@
     text-align: center;
   }
 }
+@media (max-width: 530px) {
+  .second {
+    height: 40%;
+    justify-content: space-evenly;
+  }
+
+  .second-description h4 {
+    font-size: 14px;
+  }
+  .second-description h1 {
+    font-size: 25px;
+  }
+  .cards-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+  .produits {
+    width: 70%;
+  }
+}

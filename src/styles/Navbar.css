@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.sidebar {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -53,6 +57,6 @@ nav span:hover {
 .navbar-icons {
   display: flex;
   justify-content: space-around;
-  width: 5%;
+  width: 10%;
   font-size: 20px;
 }

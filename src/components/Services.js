@@ -23,14 +23,14 @@ function Services() {
       </div>
       <div className="third-right">
         <span className="contact">
-          <span>
+          <span className="contact-third">
             <h5>ENVOYEZ-NOUS VOTRE REQUÊTE</h5>
             <span className="circle">
               <MailOutlined className="contact-icon" />
             </span>
           </span>
 
-          <span>
+          <span className="contact-third">
             <h5>APPELEZ NOUS</h5>
             <span className="circle">
               <PhoneOutlined className="contact-icon" />

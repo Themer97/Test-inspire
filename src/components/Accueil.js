@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Groupe7 from "../assets/Groupe7.png";
 import Tracé1 from "../assets/Groupe8.png";
 import Tracé2 from "../assets/Tracé116.png";
 import Tracé3 from "../assets/Tracé122.png";
 import Navbar from "./Navbar";
+import { MenuOutlined } from "@ant-design/icons";
 import "../styles/Accueil.css";
 
 function Accueil() {
+  const [showNavbar, setShowNavbar] = useState(true);
+
   return (
     <div className="top">
       <div className="navbar">
         <img className="skills-img" alt="" src={Groupe7} />
-        <Navbar />
+        <button onClick={() => setShowNavbar(!showNavbar)}>
+          <MenuOutlined />
+        </button>
+        <Navbar show={showNavbar} />
       </div>
       <div className="title-container">
         <p className="top-title">

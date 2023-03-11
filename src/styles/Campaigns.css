@@ -218,7 +218,7 @@
 }
 @media (max-width: 612px) {
   .fourth {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .fourth-left {
     height: 50%;
@@ -237,7 +237,49 @@
   .president-card {
     height: 40%;
   }
+  .profile-pic {
+    width: 40%;
+    height: 60%;
+  }
   .ant-card .ant-card-body {
     height: 10%;
+  }
+}
+@media (max-width: 612px) {
+  .fourth-right {
+    height: 40%;
+    justify-content: flex-start;
+  }
+  #coll-pics {
+    width: 100%;
+    height: 80%;
+  }
+}
+@media (max-width: 490px) {
+  .fourth {
+    justify-content: space-evenly;
+    gap: 16%;
+  }
+  .fourth-left {
+    flex-direction: column;
+  }
+  .fourth-left h1 {
+    font-size: 25px;
+  }
+  .profile-pic {
+    width: 35%;
+    height: 70%;
+  }
+  .fourth-right img {
+    width: 180px;
+  }
+  .fourth-right img {
+    width: 140px;
+  }
+  #coll-pics {
+    width: 90%;
+  }
+  table tr {
+    border: transparent !important;
   }
 }
